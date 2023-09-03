@@ -1,0 +1,39 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+	// .title__lable
+
+	&__lable {
+		text-transform: uppercase;
+		color: $grayColor;
+		font-size: rem(12);
+		font-weight: 500;
+		line-height: 2;
+		letter-spacing: em(7.5, 12);
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+		margin-bottom: em(9, 12);
+
+		&::before {
+			content: '';
+			width: rem(16);
+			height: rem(2);
+			background-color: #d9d9d9;
+		}
+	}
+
+	// .title__value
+
+	&__value {
+		font-family: Plus Jakarta Sans;
+		font-size: rem(36);
+		font-weight: 700;
+		line-height: 1.25;
+		span {
+			color: $purpleColor;
+		}
+	}
+}
+.text {
+	line-height: math.div(32, 16);
+}

@@ -1,0 +1,160 @@
+//====================================================================================================
+.header {
+	// .header__container
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(15);
+		min-height: 123px;
+	}
+
+	// .header__logo
+
+	&__logo {
+	}
+
+	// .header__menu
+
+	&__menu {
+		// flex: 1 1 auto;
+	}
+
+	// .header__button
+
+	&__button {
+		border: rem(1) solid #f1f1f1;
+		border-radius: rem(8);
+		padding: rem(16) rem(24) rem(16) rem(24);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background-color: $purpleColor;
+				border: rem(1) solid $purpleColor;
+			}
+		}
+	}
+
+	// .header__actions
+
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.menu {
+	// display: flex;
+	// align-items: center;
+
+	// .menu__icon
+
+	&__icon {
+	}
+
+	// .menu__body
+
+	&__body {
+		@media (max-width: $mobile) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			overflow: auto;
+			width: 100%;
+			height: 100%;
+			background-color: $purpleColor;
+		}
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		gap: rem(56);
+		transition: color 0.3s ease 0s;
+		flex-wrap: wrap;
+		row-gap: rem(5);
+		@media (any-hover: hover) {
+			:hover {
+				color: $purpleColor;
+			}
+			@media (max-width: $mobile) {
+				color: #fff;
+				font-size: rem(24);
+			}
+		}
+	}
+
+	// .menu__item
+
+	&__item {
+	}
+
+	// .menu__link
+
+	&__link {
+		font-weight: 500;
+		line-height: math.div(19, 16);
+	}
+}
+.icon-menu {
+}
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: '';
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
