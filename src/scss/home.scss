@@ -31,6 +31,12 @@
 			margin-bottom: rem(40);
 		}
 	}
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: rem(40);
+	}
 
 	// .main-section__image
 
@@ -44,16 +50,8 @@
 
 // .main-section__social
 
-.main-section {
-	// .main-section__social
+// .main-section__social
 
-	&__social {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: rem(40);
-	}
-}
 .social {
 	// .social__link
 
@@ -134,21 +132,80 @@
 		text-align: center;
 	}
 }
-.title {
-	// .title__lable
 
-	&__lable {
-	}
-
-	// .title__value
-
-	&__value {
-	}
-}
 .card-servises {
 	justify-items: center;
 	display: grid;
 	border-radius: rem(8);
 	@include adaptiveValue('padding', 50, 15);
 	text-align: center;
+}
+
+.works {
+	// .works__container
+
+	&__container {
+	}
+}
+
+.work {
+	// .work__main
+
+	&__main {
+		margin-top: 13em;
+		margin-bottom: 10em;
+		display: flex;
+		gap: rem(56);
+	}
+
+	// .work__card
+
+	&__card {
+		border: rem(1) solid #f1f1f1;
+		border-radius: rem(8);
+	}
+
+	// .work__photo
+
+	// .work__title
+
+	&__title {
+		font-family: Plus Jakarta Sans;
+		font-weight: 500;
+		line-height: 20px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-top: 24px;
+		margin-left: 24px;
+	}
+	&__item {
+		display: inline-flex;
+		margin-left: 16px;
+	}
+
+	// .work__button
+
+	&__button {
+		border: rem(1) solid #f1f1f1;
+		border-radius: rem(8);
+		padding: rem(8) rem(4) rem(8) rem(4);
+
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 15px;
+
+		text-align: left;
+
+		margin-left: 24px;
+		margin-top: 24px;
+		margin-bottom: 24px;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background-color: $purpleColor;
+				border: rem(1) solid $purpleColor;
+			}
+		}
+	}
 }
