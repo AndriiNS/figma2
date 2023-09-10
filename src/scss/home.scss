@@ -152,7 +152,7 @@
 	// .work__main
 
 	&__main {
-		margin-top: 13em;
+		margin-top: 7em;
 		margin-bottom: 10em;
 		display: flex;
 		gap: rem(56);
@@ -285,6 +285,7 @@
 	&__title {
 		font-family: Plus Jakarta Sans;
 		font-size: rem(18);
+
 		font-weight: 500;
 		line-height: math.div(23, 18);
 		&:not(:last-child) {
@@ -400,5 +401,176 @@
 		}
 	}
 }
+.page {
+	// .page__blog
 
-// ._tav-active
+	&__blog {
+		margin-top: 7em;
+		margin-bottom: 10em;
+	}
+}
+.blog {
+	// .blog__container
+
+	&__container {
+		padding-top: rem(30);
+		padding-bottom: rem(80);
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		grid-auto-flow: column;
+		align-content: center;
+		@include adaptiveValue('column-gap', 144, 20);
+	}
+
+	// .blog__title
+
+	&__title {
+		padding-bottom: 7em;
+		font-family: Plus Jakarta Sans;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+		letter-spacing: 0em;
+		text-align: left;
+		padding-left: 40%;
+	}
+
+	// .blog__work
+
+	&__work {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(rem(361), 1fr));
+	}
+
+	// .blog__data
+
+	&__data {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 15px;
+		letter-spacing: 0em;
+
+		padding: 20px 10px 10px 30px;
+	}
+
+	// .blog__descr
+
+	&__descr {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: 0px;
+		text-align: left;
+		padding: 10px 10px 50px 20px;
+	}
+
+	// .blog__continue
+
+	&__continue {
+		padding: 120px;
+
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 17px;
+		letter-spacing: 0px;
+		text-align: left;
+	}
+}
+.page {
+	// .page__clients
+
+	&__clients {
+	}
+}
+.clients-section {
+}
+.clients {
+	// .clients__container
+
+	&__container {
+		padding-top: rem(30);
+		padding-bottom: rem(80);
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		grid-auto-flow: column;
+		align-content: center;
+		@include adaptiveValue('column-gap', 144, 20);
+	}
+
+	// .clients__title
+
+	&__title {
+		padding-bottom: 7em;
+	}
+
+	// .clients__card
+
+	&__card {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(rem(361), 1fr));
+		padding-left: 105px;
+	}
+
+	// .clients__photo
+
+	&__photo {
+		padding-bottom: rem(32);
+		padding-left: 60px;
+	}
+
+	// .clients__text
+
+	&__text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0px;
+		text-align: left;
+	}
+
+	// .clients__name
+
+	&__name {
+		font-family: Plus Jakarta Sans;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 18px;
+		letter-spacing: 0px;
+		text-align: left;
+		padding-top: 50px;
+	}
+
+	// .clients__type
+
+	&__type {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 15px;
+		letter-spacing: 0em;
+		text-align: left;
+		padding-top: 15px;
+	}
+}
+.title {
+	// .title__lable
+
+	&__lable {
+	}
+
+	// .title__value
+
+	&__value {
+	}
+}
+.photo {
+	// .photo__card
+
+	&__card {
+	}
+}
+.card-photo {
+}
