@@ -1,3 +1,28 @@
 //====================================================================================================
+.footer {
+	// .footer__container
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: rem(80);
+		padding-bottom: rem(80);
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		gap: rem(32);
+	}
+
+	// .footer__copy
+
+	&__copy {
+		margin-top: rem(24);
+	}
+}
 
 //====================================================================================================
