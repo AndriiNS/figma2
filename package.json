@@ -4,7 +4,7 @@
 	"description": "Start template with Gulp and Webpack",
 	"author": "FLS",
 	"private": true,
-	"homepage": "https://Andriins.github.io/figma2",
+	"homepage": "https://andriins.github.io/figma2",
 	"license": "",
 	"type": "module",
 	"scripts": {
