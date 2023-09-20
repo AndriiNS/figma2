@@ -1,10 +1,10 @@
 {
+	"homepage": "https://andriins.github.io/figma2",
 	"name": "fls-start",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
 	"author": "FLS",
 	"private": true,
-	"homepage": "https://andriins.github.io/figma2",
 	"license": "",
 	"type": "module",
 	"scripts": {
